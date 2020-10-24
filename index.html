@@ -1,30 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COVID 19 Informacije</title>
-    <meta name="description" content="Ovo je veb sajt za informisanje gradjana o zarazi korona virusom i radi prevencije...">
-  <meta name="keywords" content="korona,virus,covid,covid19,simptomi,zaraza,Sars,umor.">
-  <meta name="author" content="Mirjana Ecimovic">
-
-
-
-  <meta property="og:url" content="index.html">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Informisi se o Kovidu" />
-<meta property="og:description" content="Veoma dobar sajt za informisanje o zarazi covid." />
-<meta property="og:image" content="https://s.marketwatch.com/public/resources/images/MW-IB802_corona_ZG_20200309102315.jpg">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <title>COVID 19</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="image/favicon.ico" type="image/gif" sizes="16x16">
-
 </head>
 <body>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0" nonce="qSbS5aG2"></script>
+    
 
 
     <nav class="navbar navbar-inverse">
@@ -68,7 +53,7 @@
                     <li>kašlja</li>
                     <li>otežanog disanja</li>
                     <li>bolova u mišićima</li>
-                    <li> <p> umor</p></li>
+                    <li>umora</li>
 
                 </ul>
 
@@ -77,16 +62,15 @@
         </div>
         <div class="col-md-4 col-sm-6">
             <h3 class="txt1">Šta je Covid</h3>
-            <p>Novi koronavirus koji se pojavio 2019. godine nazvan je SARS-CoV-2. Otkriven je u Kini krajem 2019. Radi se o novom soju koronavirusa koji pre nije bio otkriven kod ljudi. Bolest uzrokovana tim virusom naziva se COVID-19Kancelarija za IT i eUpravu otvorila je podatke i učinila dostupnim statistiku o broju građana u samoizolaciji, zaraženih virusom COVID-19, testiranim, hospitalizovanim i preminulim na teritoriji Republike Srbije.
-               Dostupni su podaci o broju osoba u samoizolaciji i broju zaraženih kroz vizuelizaciju ovih podataka po opštinama i gradovima od trenutka kada je u Srbiji i zvanično zabeležen prvi slučaj oboljena COVID-19.
-               Svi podaci mogu da se izvezu u xls i csv formatu za dalju obradu i vizuelizaciju..</p>
+            <p>Novi koronavirus koji se pojavio 2019. godine nazvan je SARS-CoV-2. Otkriven je u Kini krajem 2019. Radi se o novom soju koronavirusa koji pre nije bio otkriven kod ljudi. Bolest uzrokovana tim virusom naziva se COVID-19.</p>
        
         </div>
             <div class="col-md-4 col-sm-12">
-                <h3 class="txt1">Zaraza, kako je izbeći?</h3>
+                <h3 class="txt1">Kako izbeći zarazu?</h3>
                 <ul>
-                    <li> <p> pridržavajte se opštih pravila o higijeni ruku i hrane</p>  </li>
-                    <li> <p>pre jela, nakon toaleta ili diranja životinja perite ruke sapunom i vodom ili koristite dezinficijens na bazi alkohola</p> </li>
+                    <li>izbegavajte tržne centre i mesta gde se drže žive ili mrtve životinje;</li>
+                    <li>pridržavajte se opštih pravila o higijeni ruku i hrane</li>
+                    <li>pre jela, nakon toaleta ili diranja životinja perite ruke sapunom i vodom ili koristite dezinficijens na bazi alkohola</li>
                     <li>izbegavajte kontakt sa životinjama i njihovim izlučevinama</li>
                     
 
@@ -99,7 +83,7 @@
 
        
 
-
+<div id="contactButton" >
 
     <button id="kontakt" type="button" class="btn btn-info btn-lg btn-danger col-md-2  " data-toggle="modal" data-target="#myModal">Kontakt</button>
 </div>
@@ -109,37 +93,39 @@
       
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <button type="button " class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">Kontaktirajte nas</h4>
         </div>
         <div class="modal-body" style="text-align: center;">
         
              
-                <form>
-                        <label >Ime:</label><br>
-                        <input type="text"  placeholder="Unesi ime">
-                      <br>
-                 
+                <form >
+                    <div class="">
+                        <label for="ime">Ime:</label><br>
+                        <input type="text"   id="email" placeholder="Unesi ime">
+                      </div><br>
+                  <div >
                     <div >
-                        <label >Prezime:</label><br>
-                        <input type="text"   placeholder="Unesi prezime">
+                        <label for="prezime">Prezime:</label><br>
+                        <input type="text"   id="email" placeholder="Unesi prezime">
                       </div><br>
                   <div >
                       
-                    <label >Email:</label><br>
+                    <label for="email">Email:</label><br>
                     <input type="email"   id="email" placeholder="Unesi email">
                   </div><br>
 
                   <div>
-                   <label >Poruka:</label><br>
-                   <textarea cols="20" rows="10"  style="resize: none;"></textarea>
+                   <label for="poruka">Poruka:</label><br>
+                   <textarea  name="" id="" cols="20" rows="10"  style="resize: none;"></textarea>
                   </div><br>
 
                 
 
                   <button type="submit" class="btn btn-danger">Posalji</button>
-              </form>
-             
+                </form>
+              </div>
+           
      
       
       </div>
@@ -150,33 +136,35 @@
 </div>
 <br>
 
+
+  <div class="textic"> <p>Kancelarija za IT i eUpravu otvorila je podatke i učinila dostupnim statistiku o broju građana u samoizolaciji, zaraženih virusom COVID-19, testiranim, hospitalizovanim i preminulim na teritoriji Republike Srbije.
+
+   Dostupni su podaci o broju osoba u samoizolaciji i broju zaraženih kroz vizuelizaciju ovih podataka po opštinama i gradovima od trenutka kada je u Srbiji i zvanično zabeležen prvi slučaj oboljena COVID-19.
+
+  Svi podaci mogu da se izvezu u xls i csv formatu za dalju obradu i vizuelizaciju.</p>
+  </div>
+
+
+
+ </div>
+
 <div >
 
 <div class="row" style="margin-top: 5%;">
 
 
-    <img src="image/1.jpg" class="imageContainer col-md-6 " alt="prevencija covid">
-    <img src="image/2.jpg" class="imageContainer col-md-6 " alt="prevencija Sars">
+    <img src="image/1.jpg" class="imageContainer col-md-6 " alt="">
+    <img src="image/2.jpg" class="imageContainer col-md-6 " alt="">
 </div>
    
 </div>
-<div class="fb-like" data-href="https://mirjana3918.github.io/covid19/" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+
 
 <footer>
 
 
     <p>@Copyright Mirjana Ecimovic 2020</p>
 </footer>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180978884-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-180978884-1');
-</script>
-
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 </body>
 </html>

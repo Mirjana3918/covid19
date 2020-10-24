@@ -41,13 +41,17 @@ width: 25%;
 
 #contactButton
 {
-    display: flex;
+   display: flex;
   align-items: center;
   justify-content: center;
 }
 .imageContainer
 {
     height: 600px;
+}
+.textic{
+	text-align:center;
+font-family: Calibri;
 }
 
 
